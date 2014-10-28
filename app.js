@@ -20,6 +20,8 @@ $(document).ready(function(){
 			} else if ( (listItem%3) === 0){
 				$('#fizzbuzz').append(listItem + " fizz </br/>" );
 				document.getElementById('myNumber').value = '';
+			} else if (listItem%1 != 0){
+				alert('please enter valid item in inputbox');
 			} else{
 				$('#fizzbuzz').append(listItem + "</br/>" );
 				document.getElementById('myNumber').value = '';
