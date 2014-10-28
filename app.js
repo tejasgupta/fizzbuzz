@@ -10,16 +10,16 @@ $(document).ready(function(){
 		} else { 
 			for(i = 1; i <= listItem; i++){
 				if ( i%15 === 0){
-					$('#fizzbuzz').append(listItem + " - fizzBuzz </br/>" );
+					$('#fizzbuzz').append("<li>" + i + " - fizzBuzz <li></br/>" );
 					document.getElementById('myNumber').value = '';
 				} else if ( i%5 === 0){
-					$('#fizzbuzz').append(i + " - buzz </br/>" );
+					$('#fizzbuzz').append("<li>"+ i + " - buzz </li></br/>" );
 					document.getElementById('myNumber').value = '';
 				} else if ( i%3 === 0){
-					$('#fizzbuzz').append(i + " - fizz </br/>" );
+					$('#fizzbuzz').append("<li>"+ i + " - fizz </li></br/>" );
 					document.getElementById('myNumber').value = '';
 				} else{
-					$('#fizzbuzz').append(i + "</br/>" );
+					$('#fizzbuzz').append("<li>"+ i + "</li></br/>" );
 					document.getElementById('myNumber').value = '';
 				};
 			};
